@@ -3,6 +3,7 @@ public class AccountController {
     public static List<Account> searchAccounts(string searchString)
     {
         //sosl
+        //sossljjjjjjjjj
         List<Account> accList = [FIND : searchString 
                                 RETURNING Account(Name,Type,Phone)][0];
         return accList;
