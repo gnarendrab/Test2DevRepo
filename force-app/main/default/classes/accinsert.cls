@@ -12,6 +12,7 @@ public class accinsert {
         	ac.Phone = aphone;
           
         list<account> arecs	= [select id,name from account where name = :aname];
+        System.System.debug('The Chnages');
         integer n = arecs.size();
         apexpages.Message msg1 = new apexpages.Message(
         					apexpages.Severity.CONFIRM, String.valueOf(n));
