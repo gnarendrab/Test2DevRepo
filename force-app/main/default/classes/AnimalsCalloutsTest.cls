@@ -25,7 +25,7 @@ private class AnimalsCalloutsTest {
             JSON.deserializeUntyped(result.getBody());
         List<Object> animals = (List<Object>) results.get('animals');
         System.assertEquals(3, animals.size(),
-          'The array should only contain 3 items.');          
+          'The array should only contain 45 items.');          
     }   
     
     @isTest static void testPostCallout() {
