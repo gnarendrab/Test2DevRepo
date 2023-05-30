@@ -11,7 +11,7 @@ public class AnimalsCallouts {
             Map<String, Object> results = (Map<String, Object>) JSON.deserializeUntyped(response.getBody());
             // Cast the values in the 'animals' key as a list
             List<Object> animals = (List<Object>) results.get('animals');
-            System.debug('Received the following animals:');
+            System.debug('Received the following animals are :');
             for (Object animal: animals) {
                 System.debug(animal);
             }
